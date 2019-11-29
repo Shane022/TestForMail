@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIViewController+SendMail.h"
 
 @interface ViewController ()
 
@@ -16,8 +17,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
+- (IBAction)sendMail:(UIButton *)sender {
+    [self sendMailWithDelegate:self subject:@"今日周五" toRecipients:@[@"1013956388@qq.com"] ccRecipients:@[] bccRecipients:@[] result:^(MFMailComposeResult result) {
+        switch (result) {
+            case MFMailComposeResultCancelled:
+            {
+                NSLog(@"MFMailComposeResultCancelled");
+            }
+                break;
+            case MFMailComposeResultSaved:
+            {
+                NSLog(@"MFMailComposeResultSaved");
+            }
+                break;
+            case MFMailComposeResultSent:
+            {
+                NSLog(@"MFMailComposeResultSent");
+            }
+                break;
+            case MFMailComposeResultFailed:
+            {
+                NSLog(@"MFMailComposeResultFailed");
+            }
+                break;
+            default:
+                break;
+        }
+    }];
+}
 
 @end

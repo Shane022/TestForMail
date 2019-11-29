@@ -16,6 +16,7 @@
 		34419D8A2390B45200E3F727 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34419D892390B45200E3F727 /* main.m */; };
 		34419D942390B45200E3F727 /* TestForSendMailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34419D932390B45200E3F727 /* TestForSendMailTests.m */; };
 		34419D9F2390B45200E3F727 /* TestForSendMailUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34419D9E2390B45200E3F727 /* TestForSendMailUITests.m */; };
+		34419DB12390B8E700E3F727 /* UIViewController+SendMail.m in Sources */ = {isa = PBXBuildFile; fileRef = 34419DB02390B8E700E3F727 /* UIViewController+SendMail.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		34419D9A2390B45200E3F727 /* TestForSendMailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestForSendMailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34419D9E2390B45200E3F727 /* TestForSendMailUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestForSendMailUITests.m; sourceTree = "<group>"; };
 		34419DA02390B45200E3F727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34419DAF2390B8E700E3F727 /* UIViewController+SendMail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SendMail.h"; sourceTree = "<group>"; };
+		34419DB02390B8E700E3F727 /* UIViewController+SendMail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SendMail.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				34419D852390B45200E3F727 /* LaunchScreen.storyboard */,
 				34419D882390B45200E3F727 /* Info.plist */,
 				34419D892390B45200E3F727 /* main.m */,
+				34419DAF2390B8E700E3F727 /* UIViewController+SendMail.h */,
+				34419DB02390B8E700E3F727 /* UIViewController+SendMail.m */,
 			);
 			path = TestForSendMail;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 				34419D792390B44D00E3F727 /* AppDelegate.m in Sources */,
 				34419D8A2390B45200E3F727 /* main.m in Sources */,
 				34419D7C2390B44D00E3F727 /* SceneDelegate.m in Sources */,
+				34419DB12390B8E700E3F727 /* UIViewController+SendMail.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2TF2XRKN3Z;
 				INFOPLIST_FILE = TestForSendMail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2TF2XRKN3Z;
 				INFOPLIST_FILE = TestForSendMail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
